@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishil's Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div id="keys">
+            <button onclick="clearDisplay()"class="operator-btn">C</button>
+            <button onclick="backspace()"class="operator-btn"><i class="fa-solid fa-backward"></i></button>
+            <button onclick="appendToDisplay('%')"class="operator-btn"><i class="fa-solid fa-percent"></i></button>
+            <button onclick="appendToDisplay('/')" class="operator-btn"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('+')" class="operator-btn"><i class="fa-solid fa-plus"></i></button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn"><i class="fa-solid fa-minus"></i></button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
